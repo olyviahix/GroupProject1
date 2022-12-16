@@ -12,24 +12,30 @@
          crossorigin="anonymous"/>
     </head>
     <body>
-      <div
-        id="movieNavBar" class="">
-      <div>
-        <ul>
-            <li> <a href="index.html">MovieMe Home</a></li>
-            <li> <a href="movieGenerator.html">Movie Generator</a></li>
-            <li> <a href="contact.html">Contact MovieMe</a></li>
+    <div id="movieNavBar" class="">
+    <div>
+            <ul>
+                <li> <a href="index.html">MovieMe Home</a></li>
+                <li> <a href="movieGenerator.html">Movie Generator</a></li>
+                <li> <a href="contact.html">Contact MovieMe</a></li>
             
-        </ul>
-      </div>
-      </div>
-      <div>
-        <form class="example">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="search"></i>Go!</button>
-          </form>
-      </div>
-    
+            </ul>
+        </div>
+        <div>
+            <div class="searchButton">
+            <input type="text" placeholder="Search.." id="search">
+            <button type="submit">Go!</button>
+        </div>
+        <div>
+            <div class="addToWant" id="addToWant">
+            <button type="submit">Add To: Want To Watch</button>
+        </div>
+        <div>
+            <div class="addToWatched" id="addToWatched">
+            <button type="submit">Add To: Watched</button>
+        </div>
+    </div>
+      
         <script src="movieApp.js" async defer></script>
     </body>
 </html>
