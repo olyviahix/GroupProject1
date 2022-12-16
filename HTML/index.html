@@ -7,11 +7,34 @@
         <title>Movie Me</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous"/>
+         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
-      
-        
-        <script src="movieApp.js" async defer></script>
+        <div id="movieNavbar" class="">
+            <div>
+                <ul>
+                    <li> <a href="index.html">MovieMe Home</a></li>
+                    <li> <a href="movieGenerator.html">Movie Generator</a></li>
+                    <li> <a href="contact.html">Contact MovieMe!</a></li>
+                </ul>
+            </div>
+        </div>
+            <input  id="inputSearch" type="text" placeholder="Search.." name="search">
+            <button onclick="searchButton()"><i class="search"></i>Go!</button>
+         <div class="container row">
+        <div class="col" id ='showMovie'>
+            
+        </div>
+        <div class="col">
+            <h4 class="text-center">Movie List:</h4>
+            <div id="watchedList"class="text-center"><b>Watched:</b></div>
+            <div id="mustWatchedList" class="text-center"><b>Watch Wishlist:</b></div>
+          </div>
+        </div> 
+        <script src="/JS/movieApp.js" async defer></script>
     </body>
 </html>
+
