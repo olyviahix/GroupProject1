@@ -14,14 +14,14 @@
     <body>
         <nav class="navbar navbar-expand-md bg-light my-navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">MovieMe</a>
+              <a class="navbar-brand" href="/HTML/index.html">MovieMe</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Movie Generator</a>
+                    <a class="nav-link active" aria-current="page" href="/HTML/movieGenerator.html">Movie Generator</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/HTML/contact.html">Contact MovieMe</a>
@@ -31,11 +31,11 @@
             </div>
         </nav>
     <div id="movieNavBar" class="">
-    
+    </div>
         <div>
             <div class="searchButton">
-            <input type="text" placeholder="Search.." id="search">
-            <button type="submit">Go!</button>
+            <input type="text" placeholder="Search.." id="searchButton">
+            <button type="submit" onclick="searchButton()">Go!</button>
             
             
         </div>
@@ -49,6 +49,12 @@
         </div>
     </div>
       
-        <script src="movieApp.js" async defer></script>
+
+         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   
+
+
+        <script src="/JS/movieApp.js" async defer></script>
     </body>
 </html>
+
