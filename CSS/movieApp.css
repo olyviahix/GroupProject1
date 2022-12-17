@@ -1,0 +1,14 @@
+* {
+background-color: lightgray;
+border-color: rgb(234, 174, 174);
+border-style: solid;
+border-width: .2px;
+border-block: px;
+}
+
+.addToWant {
+    border-style: inset;
+    border-width: .2px;
+    border-radius: 0ex;
+    
+}
