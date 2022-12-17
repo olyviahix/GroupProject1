@@ -1,7 +1,7 @@
 
 
 function searchButton() { 
-    const string = document.getElementById('inputSearch').value;
+    const string = document.getElementById('searchButton').value;
     axios.get('https://api.themoviedb.org/3/search/movie?api_key=51d81945b1399ec636bf465b376e18c9&language=en-US&page=1&include_adult=false&query=' + string)
     .then(response =>{
         console.log(response.data.results)
