@@ -14,6 +14,7 @@
     </head>
     <body>
         <div id="movieNavbar" class="">
+        </div>   
             <div>
                 <ul>
                     <li> <a href="index.html">MovieMe Home</a></li>
@@ -21,19 +22,16 @@
                     <li> <a href="contact.html">Contact MovieMe!</a></li>
                 </ul>
             </div>
-        </div>
+
+            <div class="searchButton">
             <input  id="inputSearch" type="text" placeholder="Search.." name="search">
             <button onclick="searchButton()"><i class="search"></i>Go!</button>
-         <div class="container row">
-        <div class="col" id ='showMovie'>
-            
-        </div>
-        <div class="col">
-            <h4 class="text-center">Movie List:</h4>
-            <div id="watchedList"class="text-center"><b>Watched:</b></div>
-            <div id="mustWatchedList" class="text-center"><b>Watch Wishlist:</b></div>
+            </div>
+        <div>
+            <div id="addToWatched"><b>Watched:</b></div>
+            <div id="addToWant" ><b>Watch Wishlist:</b></div>
           </div>
-        </div> 
+
         <script src="/JS/movieApp.js" async defer></script>
     </body>
 </html>

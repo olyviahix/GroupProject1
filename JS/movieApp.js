@@ -14,7 +14,7 @@ function searchButton() {
 
 
 function showData(response){
-    let movieDiv = document.getElementById('showMovie');
+    let movieDiv = document.getElementById('movieNavbar');
     for(let i in response) {
       const movieApi = response[i];
       const newMovieDiv = document.createElement('div');
@@ -35,7 +35,7 @@ function showData(response){
           watchedRemove.remove();
         })
         watchedDiv.innerText = movieApi.title;
-        let watchedList = document.getElementById('watchedList');
+        let watchedList = document.getElementById('addToWatched');
         watchedList.appendChild(watchedDiv)
         watchedList.appendChild(watchedRemove)
       })
@@ -48,7 +48,7 @@ function showData(response){
           mustWatchRemove.remove();
         })
         mustWatchDiv.innerText = movieApi.title;
-        let mustWatchedList = document.getElementById('mustWatchedList');
+        let mustWatchedList = document.getElementById('addToWant');
         mustWatchedList.appendChild(mustWatchDiv);
         mustWatchedList.appendChild(mustWatchRemove);
       })
