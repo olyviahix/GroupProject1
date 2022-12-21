@@ -20,11 +20,13 @@ function showData(response){
       const scrollMovieDiv = document.createElement('div');
       const watchedButton = document.createElement('button');
       const mustWatchButton = document.createElement('button');
-      const movieImg = document.createElement('img'); 
-      movieImg.src = `https://image.tmdb.org/t/p/w500/${response[i].poster_path}`;
+      const movieImg= document.createElement ('Img');
+      movieImg.src = `https://image.tmdb.org/t/p/w300/${response[i].poster_path}`;
+      watchedButton.className = "watchedButton";
+      mustWatchButton.className = "mustWatchButton";
+      scrollMovieDiv.className ="newMovieDiv";
       watchedButton.innerText = "Add to Watched List";
       mustWatchButton.innerText ="Add to Watch Wishlist";
-      scrollMovieDiv.className = "scrollMovieStyle"
       scrollMovieDiv.appendChild(movieImg);
       scrollMovieDiv.appendChild(watchedButton);
       scrollMovieDiv.appendChild(mustWatchButton);
@@ -32,6 +34,8 @@ function showData(response){
       watchedButton.addEventListener('click', e=>{
         const watchedDiv = document.createElement('div');
         const watchedRemove = document.createElement('button');
+        watchedDiv.className = "watchedDiv";
+        watchedRemove.className = "watchedRemove";
         watchedRemove.innerText = "Remove";
         watchedRemove.addEventListener('click', e=>{
           watchedDiv.remove();
@@ -45,6 +49,7 @@ function showData(response){
       mustWatchButton.addEventListener('click',e=>{
         const mustWatchDiv = document.createElement('div');
         const mustWatchRemove = document.createElement('button');
+        mustWatchRemove.className = "mustWatchRemove"
         mustWatchRemove.innerText="Remove"
         mustWatchRemove.addEventListener('click', e=>{
           mustWatchDiv.remove();
