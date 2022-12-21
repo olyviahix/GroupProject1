@@ -17,18 +17,18 @@ function showData(response){
     let movieDiv = document.getElementById('movieNavbar');
     for(let i in response) {
       const movieApi = response[i];
-      const newMovieDiv = document.createElement('div');
+      const scrollMovieDiv = document.createElement('div');
       const watchedButton = document.createElement('button');
       const mustWatchButton = document.createElement('button');
       const movieImg = document.createElement('img'); 
-      movieImg.src = `https://image.tmdb.org/t/p/w500/${response[i].poster_path}`
+      movieImg.src = `https://image.tmdb.org/t/p/w500/${response[i].poster_path}`;
       watchedButton.innerText = "Add to Watched List";
       mustWatchButton.innerText ="Add to Watch Wishlist";
-      newMovieDiv.innerText = movieApi.title;
-      movieDiv.appendChild(movieImg);
-      movieDiv.appendChild(newMovieDiv);
-      movieDiv.appendChild(watchedButton);
-      movieDiv.appendChild(mustWatchButton);
+      scrollMovieDiv.className = "scrollMovieStyle"
+      scrollMovieDiv.appendChild(movieImg);
+      scrollMovieDiv.appendChild(watchedButton);
+      scrollMovieDiv.appendChild(mustWatchButton);
+      movieDiv.appendChild(scrollMovieDiv);
       watchedButton.addEventListener('click', e=>{
         const watchedDiv = document.createElement('div');
         const watchedRemove = document.createElement('button');

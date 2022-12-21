@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-     
-        
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Night Me</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/movieGen.css">
+    <script src="/js/movieGen.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="introParagraph">
+        <h1>Movie Night</h1>
+        <p>
+            Do you love movie night but never sure what to watch? Let us pick for you!
+            Whether you're looking for the most popular movie, a movie now playing in theatres, or
+            one from a list of the most top rated movies out there, we will take care of the choosing 
+            so you dont have to!
+        </p>
+    </div>
+    <div class="popularDiv">
+        <button id="popularChoiceButton" onclick="popularButton()">Popular Movies</button>
+    </div>
+    
+    <div class="popularChoiceStyle" id="popularChoiceDiv">
+            
+    </div>
+    
+    <br>
+    <div class="nowPlayingDiv">
+        <button id="nowPlayingChoiceButton" onclick="nowPlayingButton()">Now Playing Movies</button>
+    </div>
+
+    <div class="nowPlayingStyle" id="nowPlayingChoiceDiv">
+
+    </div>
+    
+    <br>
+    <div class="topRatedDiv">
+        <button id="topRatedButton" onclick="topRatedButton()">Top Rated Movies</button>
+    </div>
+    
+    <div class="topRatedStyle" id="topRatedChoiceDiv">
+            
+    </div>
+    
+</body>
+
 </html>
