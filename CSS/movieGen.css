@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Assistant:wght@300&display=swap');
+
+body {
+    background-image: url("../CSS/MoviePosterCollage.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 .introParagraph {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 100px;
     margin-right: 100px;
+    background-color: black;
+    color: white;
 
 }
 
