@@ -4,14 +4,40 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Contact Us</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Assistant:wght@300&display=swap" rel="stylesheet">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="../CSS/movieApp.css">
     </head>
     <body>
+        <h3 class="contactUsHeader">Contact Us</h3>
+        <div class="formParentDiv">
+            <form>
        
-        
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="contactEmail" id="enterEmail" placeholder="name@example.com">
+                </div>
+           
+                <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type ="text" class="contactName" id="enterName">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputComment">Feedback</label>
+                    <textarea class="form-control" id="enterFeedback"></textarea>
+
+                </div>
+                    <div class="form-group">
+                    <button type="submit" id="formSubmitButton"  class="submit">Submit</button>
+           
+            </form>
+        </div>
         <script src="" async defer></script>
+        <div>
+        <p> "This product uses the TMDB API but is not endorsed or certified by TMDB."</p>
+        </div>
     </body>
 </html>
