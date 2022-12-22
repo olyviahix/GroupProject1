@@ -21,6 +21,7 @@ h5 {
 
 .parentDiv{
     background-color: rgb(2, 2, 2);
+    background-position: top;
     padding-top: 3%;
     padding-bottom: 2%;
     margin-left: 30%;
@@ -77,6 +78,8 @@ h5 {
     display: flex
 }
 
+
+
 .scrollContainer {
     overflow-x: auto;
     white-space: nowrap;
@@ -113,7 +116,14 @@ h5 {
 }
 
 p {
-    padding-top: 20%;
+    padding-top: 25%;
     text-align: center;
+    background-color: black;
+    color: white;
+
 }
 
+textarea {
+    max-width: 50%;
+    border-radius: 0rem !important;
+}
